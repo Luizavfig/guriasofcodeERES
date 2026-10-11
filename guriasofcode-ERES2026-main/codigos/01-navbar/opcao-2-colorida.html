@@ -1,0 +1,34 @@
+<!-- 🧭 NAVBAR 2 — "Colorida": fundo em degradê do roxo para o rosa.
+     A navbar é o menu do topo do site. Ela ajuda a pular para cada parte da página.
+     📋 Como usar: copie tudo e cole no index.html, embaixo de "ETAPA 1". -->
+
+<!-- 🧭 <nav> = o menu do site.
+     bg-gradient-to-r from-purple-600 to-pink-500 = degradê da esquerda (roxo) para a direita (rosa). -->
+<nav class="bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-lg">
+
+    <!-- 📦 <div> = uma caixa que agrupa coisas.
+         📱 No celular, o nome fica em cima e os links embaixo. 💻 No computador, ficam lado a lado. -->
+    <div class="max-w-6xl mx-auto px-5 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+
+        <!-- 🔗 <a> = um link que leva para o topo da página.
+             &lt;/&gt; é o jeito de escrever o símbolo </> sem confundir o navegador.
+             ✏️ Troque "Gurias" pelo nome do blog de vocês!
+             🖼️ <img> = a LOGO. Ela puxa a imagem que está em assets/logo/logo.png.
+             ✏️ Quer outra logo? Salve por cima do arquivo logo.png (com o mesmo nome) e pronto! -->
+        <a href="#inicio" class="flex items-center gap-2 text-2xl font-black">
+            <img src="assets/logo/logo.png" alt="Logo do blog" class="h-10 w-10 rounded-full object-cover">
+            &lt;/&gt; Gurias
+        </a>
+
+        <!-- 📦 Caixa com os links. flex-wrap = se não couber numa linha, passa para a de baixo. -->
+        <div class="flex flex-wrap justify-center gap-2">
+
+            <!-- 🔗 Os links do menu, em formato de pílula (rounded-full).
+                 hover:bg-white/20 = ganha um fundinho claro quando o mouse passa em cima.
+                 ✏️ Pode trocar os textos. -->
+            <a href="#inicio" class="px-4 py-2 rounded-full hover:bg-white/20 transition">Início</a>
+            <a href="#posts" class="px-4 py-2 rounded-full hover:bg-white/20 transition">Posts</a>
+            <a href="#sobre" class="px-4 py-2 rounded-full hover:bg-white/20 transition">Sobre</a>
+        </div>
+    </div>
+</nav>

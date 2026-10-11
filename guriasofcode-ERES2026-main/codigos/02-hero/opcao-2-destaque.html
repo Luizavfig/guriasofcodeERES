@@ -1,0 +1,47 @@
+<!-- 🌟 HERO 2 — "Destaque": fundo escuro, texto à esquerda e um quadro colorido à direita.
+     A hero é a "capa" do site: a primeira parte grande que a pessoa vê.
+     📋 Como usar: copie tudo e cole no index.html, embaixo de "ETAPA 2". -->
+
+<!-- 🌟 <header> = o cabeçalho, a capa da página.
+     id="inicio" = o nome desta parte. É para cá que o link "Início" do menu leva. -->
+<header id="inicio" class="bg-slate-950 text-white overflow-hidden">
+
+    <!-- 📦 <div> = uma caixa dividida em 2 colunas (lg:grid-cols-2).
+         💻 No computador: texto de um lado, quadro do outro. 📱 No celular: um embaixo do outro. -->
+    <div class="max-w-6xl mx-auto px-5 sm:px-6 py-20 sm:py-28 grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- ⬅️ Coluna da esquerda: os textos. -->
+        <div>
+            <!-- 📝 <p> = parágrafo. Aqui é uma frase pequena em cima do título. ✏️ Pode trocar. -->
+            <p class="text-purple-300 font-bold uppercase tracking-widest text-sm">
+                Tecnologia + criatividade
+            </p>
+
+            <!-- 📰 <h1> = o título mais importante da página, como a manchete de um jornal.
+                 Use só UM <h1> no site todo. ✏️ Troque o título! -->
+            <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-black leading-tight">
+                Nosso cantinho na internet começa aqui.
+            </h1>
+
+            <!-- 📝 <p> = um parágrafo, um texto comum. ✏️ Escreva sobre o blog de vocês! -->
+            <p class="mt-5 text-slate-300 text-lg leading-relaxed">
+                Histórias, descobertas e experiências transformadas em conteúdo.
+            </p>
+
+            <!-- 🔘 <a> = um link com cara de botão. href="#posts" = leva até a parte dos posts. -->
+            <a href="#posts" class="inline-block mt-8 bg-purple-500 hover:bg-purple-400 px-6 py-3 rounded-full font-bold transition">
+                Explorar →
+            </a>
+        </div>
+
+        <!-- ➡️ Coluna da direita: um quadro com moldura em degradê.
+             O truque: uma caixa colorida (p-1) com a foto dentro. -->
+        <div class="rounded-3xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 p-1">
+
+            <!-- 🖼️ <img> = uma IMAGEM. Ela puxa a foto que está em assets/hero/hero.png.
+                 src = onde está a foto. alt = uma descrição da foto.
+                 ✏️ Quer outra foto? Salve por cima do arquivo hero.png (com o mesmo nome) e pronto! -->
+            <img src="assets/hero/hero.png" alt="Imagem de capa do blog" class="w-full h-full min-h-72 object-cover rounded-[22px]">
+        </div>
+    </div>
+</header>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- 🎁 EXEMPLO PRONTO — OPÇÃO 3: Centralizada + Card + Colorido
+     É a FOTO DA CAIXA 🧩 do quebra-cabeça: só para ver como fica.
+     Vocês montam o blog no index.html da pasta principal! 🏠 -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Opção 3</title>
+
+    <!-- 👗 Tailwind: a "loja de roupas prontas" do site. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 👗 Nosso guarda-roupa (CSS). "../" = volte uma pasta 📂⬆️ -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- 🍔 OPÇÃO 3 — NAVBAR "CENTRALIZADA" (escura e no meio)
+         Navbar = o CARDÁPIO 🍔 do site: o menu lá no topo.
+         💡 class="..." = as ROUPAS 👗 (vêm do Tailwind). -->
+
+    <!-- 🍔 <nav> = o CARDÁPIO do site, no "modo noturno" 🌙 -->
+    <nav class="bg-slate-950 text-white border-b border-slate-800">
+
+        <!-- 📦 <div> = CAIXINHA que guarda tudo dentro. -->
+        <div class="max-w-6xl mx-auto px-5 sm:px-6 py-5">
+
+            <!-- 🚪 <a> = PORTA (link) com o nome do blog, bem no MEIO 🪧 -->
+            <!-- ✏️ Troque "Meu Espaço Digital" pelo nome do blog de vocês! -->
+            <a href="#inicio" class="block text-center text-2xl font-black text-purple-300">
+                Meu Espaço Digital
+            </a>
+
+            <!-- 📦 CAIXINHA dos links, centralizados. -->
+            <div class="mt-4 flex justify-center gap-6 text-sm font-medium text-slate-300">
+
+                <!-- 🚪 PORTAS do cardápio. Ficam BRANCAS com o mouse em cima ✨ -->
+                <!-- ✏️ Troque os textos se quiser. -->
+                <a href="#inicio" class="hover:text-white">Início</a>
+                <a href="#posts" class="hover:text-white">Publicações</a>
+                <a href="#sobre" class="hover:text-white">Sobre nós</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🎬 OPÇÃO 3 — HERO "CARD" (cartão-postal 💌 flutuando)
+         Hero = a CAPA 📖 do site: a primeira coisa grande que aparece.
+         💡 class="..." = as ROUPAS 👗 (vêm do Tailwind). -->
+
+    <!-- 📖 <header> = a CAPA da página. id="inicio" = ETIQUETA 🏷️ que o link "Início" procura. -->
+    <header id="inicio" class="bg-purple-100 px-4 sm:px-6 py-10 sm:py-16">
+
+        <!-- 💌 📦 CAIXINHA que vira um CARTÃO flutuando 🎈 -->
+        <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+
+            <!-- 📦 CAIXINHA que divide o cartão em 5 fatias 🍕 (em telas grandes). -->
+            <div class="grid lg:grid-cols-5">
+
+                <!-- ⬅️ 📦 Lado do TEXTO: ocupa 3 das 5 fatias (lg:col-span-3). -->
+                <div class="lg:col-span-3 p-8 sm:p-12 lg:p-16">
+
+                    <!-- 🏷️ <span> = uma ETIQUETINHA de texto, cor-de-rosa. -->
+                    <!-- ✏️ Troque se quiser. -->
+                    <span class="text-pink-600 font-bold">BLOG • 2026</span>
+
+                    <!-- 📣 <h1> = TÍTULO PRINCIPAL, a "manchete do jornal" (só UM por página). -->
+                    <!-- ✏️ Troque o título! -->
+                    <h1 class="mt-4 text-4xl sm:text-5xl font-black text-slate-900">
+                        Um blog com a nossa personalidade.
+                    </h1>
+
+                    <!-- 📝 <p> = um PARÁGRAFO com a descrição. -->
+                    <!-- ✏️ Troque a descrição! -->
+                    <p class="mt-5 text-slate-600 text-lg leading-relaxed">
+                        Escolha as cores, escreva sobre o que gosta e transforme este template no seu próprio projeto.
+                    </p>
+
+                    <!-- 🚪 <a> = PORTA (link) vestida de BOTÃO 🔘. Leva até os posts. -->
+                    <a href="#posts" class="inline-block mt-8 bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-xl font-bold">
+                        Começar a explorar
+                    </a>
+                </div>
+
+                <!-- ➡️ 📦 Lado COLORIDO (2 das 5 fatias), com uma estrela no meio. -->
+                <div class="lg:col-span-2 min-h-72 bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600 flex items-center justify-center">
+                    <!-- 🏷️ <span> com uma estrelinha gigante. ✏️ Troque por um emoji! -->
+                    <span class="text-white text-8xl">✦</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🃏 SEÇÃO DE POSTS — 6 CARDS
+         Cards = as FIGURINHAS 🃏 do blog: cada uma mostra um post. -->
+
+    <!-- 🗂️ <section> = uma SEÇÃO, como um CAPÍTULO 📚. id="posts" = ETIQUETA 🏷️ do link "Posts". -->
+    <section id="posts" class="max-w-6xl mx-auto px-5 sm:px-6 py-16 sm:py-20">
+
+        <!-- 📦 <div> = CAIXINHA com o título do capítulo. -->
+        <div class="mb-10">
+
+            <!-- 📝 <p> = PARÁGRAFO. Aqui é um "chapéu" roxo em cima do título. -->
+            <p class="text-purple-600 font-bold">PUBLICAÇÕES</p>
+
+            <!-- 📣 <h2> = SUBTÍTULO, o título de um capítulo. -->
+            <!-- ✏️ Troque o subtítulo se quiser. -->
+            <h2 class="mt-2 text-3xl sm:text-4xl font-black text-slate-900">
+                O que estamos compartilhando
+            </h2>
+
+            <!-- 📝 <p> = PARÁGRAFO com uma explicação. -->
+            <p class="mt-3 text-slate-600">
+                ✏️ Troque categorias, títulos e textos pelos conteúdos do seu grupo.
+            </p>
+        </div>
+
+        <!-- 📦 PRATELEIRA de cards 🗄️: 📱 1 por linha | 📲 2 | 💻 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- 🃏 CARD 1 ===============================================
+                 <article> = um ARTIGO, um conteúdo que faz sentido sozinho,
+                 como uma FIGURINHA do álbum.
+                 👗 Roupas: fundo branco, borda cinza, cantos arredondados
+                 (rounded-2xl) e, quando o mouse passa por cima (hover:),
+                 ganha mais sombra e SOBE um pouquinho (-translate-y-1). 🎈 -->
+            <article class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+
+                <!-- 🖼️ Foto do card: puxa assets/cards/cards.png. ✏️ Salve outra foto com esse mesmo nome para trocar! -->
+                <img src="../assets/cards/cards.png" alt="Imagem do post" class="h-32 w-full object-cover">
+
+                <!-- 📦 CAIXINHA de baixo: os textos do card (p-6 = espaço por dentro). -->
+                <div class="p-6">
+                    <!-- 🏷️ <span> = ETIQUETINHA com a categoria do post. -->
+                    <span class="text-purple-600 text-sm font-bold">PROGRAMAÇÃO</span>
+                    <!-- 📣 <h3> = título do card (um "sub-subtítulo"). -->
+                    <h3 class="mt-2 text-xl font-black">Meu primeiro código</h3>
+                    <!-- 📝 <p> = o resuminho do post. -->
+                    <p class="mt-3 text-slate-600 leading-relaxed">Como foi transformar uma ideia em instruções para o computador.</p>
+                    <!-- 🔘 <button> = BOTÃO, como uma campainha 🛎️. botao-post = APELIDO que o JavaScript 🧠 usa. -->
+                    <button class="botao-post mt-6 text-purple-700 font-bold hover:underline">Ler post →</button>
+                </div>
+            </article>
+
+            <!-- 🃏 CARD 2 — mesma receita do card 1, só muda a cor (rosa) e os textos. -->
+            <article class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+                <img src="../assets/cards/cards.png" alt="Imagem do post" class="h-32 w-full object-cover">
+                <div class="p-6">
+                    <span class="text-pink-600 text-sm font-bold">HTML</span>
+                    <h3 class="mt-2 text-xl font-black">Construindo uma página</h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed">Descobrindo como os elementos se juntam para formar um site.</p>
+                    <button class="botao-post mt-6 text-pink-700 font-bold hover:underline">Ler post →</button>
+                </div>
+            </article>
+
+            <!-- 🃏 CARD 3 — mesma receita, cor azul. -->
+            <article class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+                <img src="../assets/cards/cards.png" alt="Imagem do post" class="h-32 w-full object-cover">
+                <div class="p-6">
+                    <span class="text-blue-600 text-sm font-bold">ESTILO</span>
+                    <h3 class="mt-2 text-xl font-black">Escolhendo nossas cores</h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed">Como cores, fontes e espaços ajudam a criar uma identidade.</p>
+                    <button class="botao-post mt-6 text-blue-700 font-bold hover:underline">Ler post →</button>
+                </div>
+            </article>
+
+            <!-- 🃏 CARD 4 — mesma receita, cor verde. -->
+            <article class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+                <img src="../assets/cards/cards.png" alt="Imagem do post" class="h-32 w-full object-cover">
+                <div class="p-6">
+                    <span class="text-emerald-600 text-sm font-bold">JAVASCRIPT</span>
+                    <h3 class="mt-2 text-xl font-black">Dando vida ao site</h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed">Criando nossas primeiras interações usando JavaScript.</p>
+                    <button class="botao-post mt-6 text-emerald-700 font-bold hover:underline">Ler post →</button>
+                </div>
+            </article>
+
+            <!-- 🃏 CARD 5 — mesma receita, cor laranja. -->
+            <article class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+                <img src="../assets/cards/cards.png" alt="Imagem do post" class="h-32 w-full object-cover">
+                <div class="p-6">
+                    <span class="text-orange-600 text-sm font-bold">CRIATIVIDADE</span>
+                    <h3 class="mt-2 text-xl font-black">Um projeto com nossa cara</h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed">Personalizando o projeto e experimentando novas ideias.</p>
+                    <button class="botao-post mt-6 text-orange-700 font-bold hover:underline">Ler post →</button>
+                </div>
+            </article>
+
+            <!-- 🃏 CARD 6 — SUA VEZ! ✏️ Borda tracejada ✂️ = espaço de vocês. Troque tudo! -->
+            <article class="group bg-white border-2 border-dashed border-purple-300 rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition">
+                <img src="../assets/cards/cards.png" alt="Imagem do post" class="h-32 w-full object-cover">
+                <div class="p-6">
+                    <span class="text-purple-600 text-sm font-bold">SUA CATEGORIA</span>
+                    <h3 class="mt-2 text-xl font-black">Crie seu próprio post</h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed">Este card é seu. Escolha o assunto e escreva uma descrição.</p>
+                    <button class="botao-post mt-6 text-purple-700 font-bold hover:underline">Ler post →</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- 👣 OPÇÃO 3 — RODAPÉ "COLORIDO" (degradê roxo → rosa)
+         Rodapé = o PÉ DA PÁGINA 👣, como a assinatura de uma carta ✉️
+         💡 class="..." = as ROUPAS 👗 (vêm do Tailwind). -->
+
+    <!-- 👣 <footer> = o PÉ DA PÁGINA, em degradê 🌈. id="sobre" = ETIQUETA 🏷️ do link "Sobre". -->
+    <footer id="sobre" class="bg-gradient-to-r from-purple-700 via-fuchsia-600 to-pink-600 text-white">
+
+        <!-- 📦 <div> = uma CAIXINHA com tudo centralizado. -->
+        <div class="max-w-6xl mx-auto px-5 sm:px-6 py-14 text-center">
+
+            <!-- 📦 QUADRADINHO de vidro com uma estrela ✦. ✏️ Troque por um emoji! -->
+            <div class="w-12 h-12 mx-auto rounded-2xl bg-white/20 flex items-center justify-center text-2xl">✦</div>
+
+            <!-- 📣 <h2> = SUBTÍTULO de despedida. ✏️ Troque! -->
+            <h2 class="mt-5 text-3xl font-black">Até o próximo post!</h2>
+
+            <!-- 📝 <p> = PARÁGRAFO contando quem fez o blog. -->
+            <!-- ✏️ Personalize! -->
+            <p class="max-w-xl mx-auto mt-3 text-white/80">
+                Este blog foi criado por pessoas curiosas que decidiram experimentar o mundo da programação.
+            </p>
+
+            <!-- 🚪 <a> = PORTA vestida de BOTÃO 🔘: um ELEVADOR ⬆️ de volta ao topo. -->
+            <a href="#inicio" class="inline-block mt-7 bg-white text-purple-700 px-5 py-2.5 rounded-full font-bold hover:scale-105 transition">
+                Voltar ao início ↑
+            </a>
+        </div>
+    </footer>
+
+    <!-- 🔙 Botão para voltar ao menu de opções (só nos exemplos). -->
+    <a href="index.html" class="fixed bottom-4 right-4 z-50 bg-white text-purple-700 border border-purple-200 shadow-lg px-4 py-2 rounded-full text-sm font-bold hover:bg-purple-50">
+        ← Ver outras opções
+    </a>
+
+    <!-- 🧠 O cérebro do site (JavaScript). -->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

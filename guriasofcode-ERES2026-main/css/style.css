@@ -1,0 +1,94 @@
+/* 🎨 CSS — o arquivo que cuida da APARÊNCIA do site: cores, tamanhos, letras e espaços.
+   💡 Este texto é um COMENTÁRIO: um recado para nós, o site não mostra.
+      Todo comentário de CSS começa com  / *  e termina com  * /  (só que sem os espaços).
+   💡 Toda regra de CSS tem este formato:
+        quem { o-que-mudar: como-fica; }
+      Exemplo:  h1 { color: red; }  →  deixa os títulos <h1> vermelhos. */
+
+
+/* 🛝 Quando você clica num link do menu, a página desliza devagar até lá (em vez de pular). */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 📄 body = tudo o que aparece na tela. */
+body {
+    /* Tira o espacinho branco que o navegador coloca em volta da página. */
+    margin: 0;
+
+    /* 🔤 A fonte (tipo de letra) do site. Se o computador não tiver Arial, usa a próxima da lista. */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 🎨 PALETA DE CORES — cada cor tem um tom forte e um tom clarinho.
+   ✏️ Copie um desses códigos (o que começa com #) para usar nas regras lá embaixo!
+
+   ROXO
+   #7c3aed
+   #ede9fe
+
+   ROSA
+   #db2777
+   #fce7f3
+
+   AZUL
+   #2563eb
+   #dbeafe
+
+   VERDE
+   #059669
+   #d1fae5
+
+   LARANJA
+   #ea580c
+   #ffedd5
+*/
+
+
+/* 🧪 CLASSES PARA TESTAR
+   Uma classe é um "estilo com nome". No CSS, o nome começa com um ponto: .meu-titulo
+   Para usar no HTML, escreva o nome (sem o ponto) dentro do class="...". */
+
+/* 📰 Teste: coloque class="meu-titulo" em um título. Ex.: <h2 class="meu-titulo">Oi!</h2> */
+.meu-titulo {
+    /* Cor da letra. ✏️ Troque pelo código de outra cor da paleta! */
+    color: #7c3aed;
+
+    /* Tamanho da letra. ✏️ Teste números maiores ou menores! */
+    font-size: 40px;
+}
+
+
+/* 🔘 Teste: coloque class="meu-botao" em um botão ou link. */
+.meu-botao {
+    /* Cor do fundo. */
+    background-color: #7c3aed;
+
+    /* Cor da letra. */
+    color: white;
+
+    /* padding = espaço por dentro do botão (primeiro: em cima e embaixo; segundo: nos lados). */
+    padding: 12px 20px;
+
+    /* Deixa os cantos redondos. Quanto maior o número, mais redondo. */
+    border-radius: 12px;
+}
+
+
+/* 📦 Teste: coloque class="minha-caixa" em uma <div> para ela virar um cartão. */
+.minha-caixa {
+    /* Fundo branco. */
+    background-color: white;
+
+    /* Borda: grossura (1px), tipo (solid = linha contínua) e cor. */
+    border: 1px solid #e2e8f0;
+
+    /* Cantos redondos. */
+    border-radius: 16px;
+
+    /* Espaço por dentro da caixa. */
+    padding: 24px;
+
+    /* Uma sombra suave embaixo, para parecer que a caixa está flutuando. */
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}

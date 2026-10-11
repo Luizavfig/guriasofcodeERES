@@ -1,0 +1,30 @@
+<!-- 🧭 NAVBAR 3 — "Centralizada": fundo escuro, nome no meio e links embaixo dele.
+     A navbar é o menu do topo do site. Ela ajuda a pular para cada parte da página.
+     📋 Como usar: copie tudo e cole no index.html, embaixo de "ETAPA 1". -->
+
+<!-- 🧭 <nav> = o menu do site. bg-slate-950 = fundo quase preto. text-white = letras brancas. -->
+<nav class="bg-slate-950 text-white border-b border-slate-800">
+
+    <!-- 📦 <div> = uma caixa que agrupa o nome e os links. -->
+    <div class="max-w-6xl mx-auto px-5 sm:px-6 py-5">
+
+        <!-- 🔗 <a> = um link com o nome do blog. text-center = fica no meio da tela.
+             ✏️ Troque "Meu Espaço Digital" pelo nome do blog de vocês!
+             🖼️ <img> = a LOGO. Ela puxa a imagem que está em assets/logo/logo.png.
+             ✏️ Quer outra logo? Salve por cima do arquivo logo.png (com o mesmo nome) e pronto! -->
+        <a href="#inicio" class="flex items-center justify-center gap-3 text-2xl font-black text-purple-300">
+            <img src="assets/logo/logo.png" alt="Logo do blog" class="h-10 w-10 rounded-full object-cover">
+            Meu Espaço Digital
+        </a>
+
+        <!-- 📦 Caixa com os links, centralizados (justify-center). mt-4 = um espaço em cima. -->
+        <div class="mt-4 flex justify-center gap-6 text-sm font-medium text-slate-300">
+
+            <!-- 🔗 Os links do menu. hover:text-white = ficam brancos quando o mouse passa em cima.
+                 ✏️ Pode trocar os textos. -->
+            <a href="#inicio" class="hover:text-white">Início</a>
+            <a href="#posts" class="hover:text-white">Publicações</a>
+            <a href="#sobre" class="hover:text-white">Sobre nós</a>
+        </div>
+    </div>
+</nav>
